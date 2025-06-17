@@ -1,9 +1,9 @@
-<?php include './reusable_includes/header.php'; ?>
+<?php include './includes/header.php'; ?>
 
     <div class="site-content">
-        <img class="image1" src="./assets/image/image 1 top-view.jpg" alt="top-view-image-1" height="600px">
+        <img class="image1" src="./assets/image/image 1 top-view.jpg" alt="top-view-image-1">
         <h1>WELCOME TO GALLERY CAFE</h1>
-        <span><b>Discover a world of flavor at The Gallery Café, Colombo’s favorite dining destination. We serve a delightful variety of cuisines including Sri Lankan, Chinese, and Italian, all crafted with fresh ingredients. Enjoy cozy indoor seating, relaxing garden spaces, and a peaceful atmosphere perfect for casual meals, family gatherings, or romantic dinners.</b></span>
+        <p>Discover a world of flavor at The Gallery Café, Colombo’s favorite dining destination. We serve a delightful variety of cuisines including Sri Lankan, Chinese, and Italian, all crafted with fresh ingredients. Enjoy cozy indoor seating, relaxing garden spaces, and a peaceful atmosphere perfect for casual meals, family gatherings, or romantic dinners.</p>
     </div>
 
 <div class="menu-container">
@@ -14,7 +14,7 @@
             <p>
                 Craving something mouthwatering? Dive into our wide selection of Sri Lankan, Chinese, and Italian dishes.
                 <br><br>
-                <a href="#menu" class="menu-button">🍽️ VIEW OUR MENU NOW →</a>
+                <a href="./pages/menu.php" class="menu-button">🍽️ VIEW OUR MENU NOW →</a>
             </p>
         </div>
     </div>
@@ -36,11 +36,11 @@
                 lunch or a special celebration, we welcome you as part of our family.
             </p>
         </div>
-                <img class="image2" src="./assets/image/brooke-lark-wMzx2nBdeng-unsplash.jpg" alt="top-view-image-2" width="300px" height="300px">
+                <img class="story_img" src="./assets/image/brooke-lark-wMzx2nBdeng-unsplash.jpg" alt="top-view-image-2" width="300px" height="300px">
     </div>
 </div>
 
-<?php include './reusable_includes/footer.php'; ?>
+<?php include './includes/footer.php'; ?>
 
 
 

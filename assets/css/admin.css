@@ -1,0 +1,326 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  height: 60px;
+  background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-user-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.admin-user-dropdown i {
+  font-size: 1.5rem;
+}
+
+/* ===== SIDEBAR ===== */
+.admin-sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 60px);
+  background-color: #2c2c2c;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+.admin-sidebar nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar li a {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.admin-sidebar li a i {
+  margin-right: 10px;
+}
+
+.admin-sidebar li a:hover,
+.admin-sidebar li a.active {
+  background-color: #000;
+  color: #ffcc00;
+}
+
+/* ===== MAIN CONTENT ===== */
+.admin-main {
+  margin-left: 220px;
+  padding: 80px 30px 30px;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.admin-main h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ===== FLASH MESSAGES ===== */
+.admin-main p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.admin-main p.success {
+  color: green;
+}
+
+.admin-main p.error {
+  color: red;
+}
+
+/* ===== TOP ACTION LINKS ===== */
+.admin-main ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.admin-main ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #921e03e6;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+
+/* ===== TABLE STYLES ===== */
+.admin-main table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.admin-main thead {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+.admin-main th,
+.admin-main td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* ===== IMAGE imgNAIL ===== */
+.menu-img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ===== NO ITEMS FALLBACK ===== */
+.admin-main td[colspan="6"] {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* ===== FORM STYLES ===== */
+.admin-main form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+}
+
+.admin-main label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-main input[type="text"],
+.admin-main input[type="number"],
+.admin-main textarea,
+.admin-main select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.admin-main input[type="text"]:focus,
+.admin-main input[type="number"]:focus,
+.admin-main textarea:focus,
+.admin-main select:focus {
+  border-color: #921e03e6;
+  outline: none;
+  background: #fff;
+}
+
+.admin-main textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.admin-main input[type="file"] {
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+/* ===== FORM BUTTON ===== */
+.admin-main button[type="submit"] {
+  background-color: #921e03e6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+
+
+/* ===== Action Icons Container ===== */
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== Edit Icon ===== */
+.action-icons a[title="Edit"] i {
+  color: #444;
+  font-size: 18px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+
+/* ===== Delete Button/Icon ===== */
+.action-icons form {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.action-icons button[type="submit"] {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.action-icons button[type="submit"] i {
+  color: #d32f2f;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.profile-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.profile-container th, .profile-container td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+
+/* Drop menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(58, 56, 56);
+    min-width: 160px;
+    border: 1px solid #000000;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
