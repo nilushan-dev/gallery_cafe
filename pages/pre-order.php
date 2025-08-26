@@ -53,8 +53,8 @@ $selectedCuisine = $_GET['cuisine'] ?? '';
 $selectedCategory = $_GET['category'] ?? '';
 ?>
 
-<div class="login-container" id="our-signup">
-    <div class="center">
+<div class="login-container">
+    <div class="center-content">
         <h1>Pre-Order Your Food</h1>
 
         <!-- Cuisine Filter -->
@@ -97,7 +97,7 @@ $selectedCategory = $_GET['category'] ?? '';
 
             <div class="txt_field">
                 <label>Select Items and Quantity</label>
-                <div style="max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+                <div style="max-height: 240px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
                     <?php
                     $conditions = [];
                     if (!empty($selectedCuisine)) {

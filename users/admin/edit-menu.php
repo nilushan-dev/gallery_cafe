@@ -60,11 +60,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $newImageName = $image_url; // Default to existing image
 
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-            $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+            $allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
             $fileType = $_FILES['image']['type'];
 
             if (!in_array($fileType, $allowedTypes)) {
-                $error = "Only JPG, PNG, GIF images allowed.";
+            $error = "Only JPG, PNG, GIF, and WEBP images allowed.";
             } else {
                 $originalName = $_FILES['image']['name'];
                 $fileExt = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));

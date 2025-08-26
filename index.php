@@ -9,7 +9,7 @@
 <div class="menu-container">
     <h2>EXPLORE OUR DELICIOUS MENU</h2>
     <div class="story-content">
-        <img class="image2" src="./assets/image/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg" alt="top-view-image-2" width="300px" height="300px">
+        <img class="image2" src="./assets/image/menu/menu-1.jpg" alt="top-view-image-2" width="300px" height="300px">
         <div class="story-text">
             <p>
                 Craving something mouthwatering? Dive into our wide selection of Sri Lankan, Chinese, and Italian dishes.
@@ -21,24 +21,24 @@
 </div>
 
 <div id="story" class="story">
-    <h2>OUR STORY</h2>
-    <div class="story-content">
-        <div class="story-text">
-            <p>
-                The Gallery Cafe was born from a simple dream—a family’s love for food, art, and bringing people together.
-                What began in our family kitchen with cherished recipes passed down through generations has grown into one of 
-                Colombo’s most beloved dining spots. Our founders, inspired by home-cooked warmth and hospitality, wanted to 
-                create a space where everyone feels at home.
-            </p>
-            <p>
-                Every corner of the cafe tells a story—of shared meals, laughter, and the joy of good company. From traditional 
-                Sri Lankan flavors to international favorites, each dish is crafted with heart. Whether you're here for a quiet 
-                lunch or a special celebration, we welcome you as part of our family.
-            </p>
-        </div>
-                <img class="story_img" src="./assets/image/brooke-lark-wMzx2nBdeng-unsplash.jpg" alt="top-view-image-2" width="300px" height="300px">
+  <h2>OUR STORY</h2>
+  <div class="story-content">
+    <div class="story-text">
+      <p>
+        The Gallery Cafe was born from a simple dream—a family’s love for food, art, and bringing people together.
+        What began in our family kitchen with cherished recipes passed down through generations has grown into one of
+        Colombo’s most beloved dining spots. Our founders, inspired by home-cooked warmth and hospitality, wanted to
+        create a space where everyone feels at home.
+      </p>
+      <p>
+        Every corner of the cafe tells a story—of shared meals, laughter, and the joy of good company. From traditional
+        Sri Lankan flavors to international favorites, each dish is crafted with heart. Whether you're here for a quiet
+        lunch or a special celebration, we welcome you as part of our family.
+      </p>
     </div>
+  </div>
 </div>
+
 
 <?php include './includes/footer.php'; ?>
 

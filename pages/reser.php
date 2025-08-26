@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <div class="login-container" id="our-signup">
-    <div class="center">
+    <div class="center-content">
         <h1>Make a Reservation</h1>
         <form action="reser.php" method="POST">
             <div class="txt_field">

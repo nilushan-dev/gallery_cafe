@@ -1,3 +1,4 @@
+
 <?php
 // Start session and include header and database connection
 include '../includes/header.php';
@@ -46,7 +47,7 @@ $isLoggedIn = isset($_SESSION["user"]) && $_SESSION["user"] != "";
         // Categories list
         $categoryList = [
             '' => '🍽️ ALL',
-            'Breakfast' => '🍳 BREAKFASAT',
+            'Breakfast' => '🍳 BREAKFAST',
             'Lunch' => '🍛 LUNCH',
             'Dinner' => '🍽️ DINNER',
             'Beverage' => '🥤 BEVERAGE'
@@ -59,7 +60,7 @@ $isLoggedIn = isset($_SESSION["user"]) && $_SESSION["user"] != "";
             $activeClass = ($key == $selectedCategory) ? "category-link active" : "category-link";
             echo "<a href='menu.php?cuisine=$selectedCuisine&category=$key' class='$activeClass'>$label</a>";
         }
-        echo "</div>";
+        echo "</div></div>";
     }
 
     // Prepare SQL query based on filters
@@ -90,11 +91,10 @@ $isLoggedIn = isset($_SESSION["user"]) && $_SESSION["user"] != "";
             echo "<strong>Rs. " . htmlspecialchars($row['price']) . "</strong><br>";
 
             if (!empty($row['image_url'])) {
-                echo "<img src='../assets/images/" . htmlspecialchars($row['image_url']) . "' width='100' alt='menu image'><br>";
+                echo "<img src='../assets/images/menu/" . htmlspecialchars($row['image_url']) . "' alt='menu image'><br>";
             }
 
-            // No Add to Cart section
-            echo "</div><hr>";
+            echo "</div>";
         }
         echo "</div>";
     } else {
@@ -104,7 +104,6 @@ $isLoggedIn = isset($_SESSION["user"]) && $_SESSION["user"] != "";
     $conn->close();
     ?>
 
-</div>
 </div>
 
 <?php include '../includes/footer.php'; ?>

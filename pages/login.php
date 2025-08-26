@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } elseif ($userType === 'staff') {
                 header("Location: ../users/staff/reservation-management.php");
             } else {
-                header("Location: ../users/customer/dashboard.php");
+                header("Location: ../users/customer/index.php");
             }
             exit();
         } else {

@@ -44,11 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             mkdir($uploadDir, 0777, true);
         }
 
-        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
         $fileType = $_FILES['image']['type'];
 
         if (!in_array($fileType, $allowedTypes)) {
-            $error = "Only JPG, PNG, GIF images allowed.";
+        $error = "Only JPG, PNG, GIF, and WEBP images allowed.";
         } else {
             $originalName = $_FILES['image']['name'];
             $fileExt = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
